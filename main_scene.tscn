@@ -1,3 +1,14 @@
-[gd_scene format=3 uid="uid://wifvkxjq2m12"]
+[gd_scene load_steps=3 format=3 uid="uid://wifvkxjq2m12"]
+
+[ext_resource type="Texture2D" uid="uid://divsaj78qccxk" path="res://Pictures/icon.svg" id="1_bqaqh"]
+[ext_resource type="PackedScene" uid="uid://bhgdeio5px6il" path="res://Fall_Tree.tscn" id="2_aq4l8"]
 
 [node name="Main Scene" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(100, 559)
+texture = ExtResource("1_bqaqh")
+
+[node name="Forest" type="Node2D" parent="."]
+
+[node name="Tree" parent="Forest" instance=ExtResource("2_aq4l8")]
