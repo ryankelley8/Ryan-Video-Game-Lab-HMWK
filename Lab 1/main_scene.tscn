@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://wifvkxjq2m12"]
+
+[ext_resource type="PackedScene" uid="uid://c3s081dj4wspo" path="res://Forrest.tscn" id="1_ka6hs"]
+[ext_resource type="PackedScene" uid="uid://cga63wad3jwuw" path="res://Logo and Dog.tscn" id="2_v8dpw"]
+
+[node name="Main Scene" type="Node2D"]
+scale = Vector2(0.8, 0.8)
+
+[node name="Forrest" parent="." instance=ExtResource("1_ka6hs")]
+position = Vector2(0, -100)
+
+[node name="Logo and Dog Sprite" parent="." instance=ExtResource("2_v8dpw")]
+position = Vector2(0, 150)

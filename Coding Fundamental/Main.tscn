@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://bii0gq4bdu5h3"]
+
+[ext_resource type="Texture2D" uid="uid://dxrh4u8rleyue" path="res://icon.svg" id="1_mr4mp"]
+[ext_resource type="PackedScene" uid="uid://1pqwjxix4taw" path="res://DIY Tree.tscn" id="2_dobwd"]
+[ext_resource type="Script" path="res://Parent.gd" id="2_eiu31"]
+[ext_resource type="Script" path="res://Forrest.gd" id="3_cykiu"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Parent" type="Sprite2D" parent="."]
+position = Vector2(100, 94)
+texture = ExtResource("1_mr4mp")
+script = ExtResource("2_eiu31")
+
+[node name="Child" type="Sprite2D" parent="Parent"]
+position = Vector2(163, 3)
+texture = ExtResource("1_mr4mp")
+
+[node name="Forrest" type="Node2D" parent="."]
+script = ExtResource("3_cykiu")
+
+[node name="Slow DIY TREE 1" parent="Forrest" instance=ExtResource("2_dobwd")]
+position = Vector2(594, 404)
+
+[node name="Fast DIY TREE 2" parent="Forrest" instance=ExtResource("2_dobwd")]
+position = Vector2(834, 405)
+speed = 0.5
+
+[node name="Little DIY TREE 3" parent="Forrest" instance=ExtResource("2_dobwd")]
+position = Vector2(372, 404)
+speed = 0.3
