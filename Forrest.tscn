@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3s081dj4wspo"]
+
+[ext_resource type="Texture2D" uid="uid://3n87xpvm1838" path="res://Pictures/Tree.png" id="1_omlkv"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Tree" type="Sprite2D" parent="."]
+position = Vector2(0, 400)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("1_omlkv")
+
+[node name="Tree2" type="Sprite2D" parent="."]
+position = Vector2(1000, 400)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("1_omlkv")
+
+[node name="Tree3" type="Sprite2D" parent="."]
+position = Vector2(500, 400)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("1_omlkv")
