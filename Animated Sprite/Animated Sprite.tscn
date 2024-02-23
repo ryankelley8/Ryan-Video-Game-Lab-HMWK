@@ -1,0 +1,118 @@
+[gd_scene load_steps=18 format=3 uid="uid://cse2q7vwmllu4"]
+
+[ext_resource type="Texture2D" uid="uid://ou83gf37ewqn" path="res://HappySheep_All.png" id="1_26go0"]
+[ext_resource type="Script" path="res://Sheep.gd" id="2_88ej7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gxwoe"]
+atlas = ExtResource("1_26go0")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pg5u2"]
+atlas = ExtResource("1_26go0")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1x88w"]
+atlas = ExtResource("1_26go0")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2nen2"]
+atlas = ExtResource("1_26go0")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j7f7k"]
+atlas = ExtResource("1_26go0")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2bl37"]
+atlas = ExtResource("1_26go0")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k3gxa"]
+atlas = ExtResource("1_26go0")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_che21"]
+atlas = ExtResource("1_26go0")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sqay4"]
+atlas = ExtResource("1_26go0")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0akv1"]
+atlas = ExtResource("1_26go0")
+region = Rect2(128, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xo8dv"]
+atlas = ExtResource("1_26go0")
+region = Rect2(256, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m2c8b"]
+atlas = ExtResource("1_26go0")
+region = Rect2(384, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0l81h"]
+atlas = ExtResource("1_26go0")
+region = Rect2(512, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c5km6"]
+atlas = ExtResource("1_26go0")
+region = Rect2(640, 128, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4j07a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gxwoe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pg5u2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1x88w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2nen2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j7f7k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2bl37")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k3gxa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_che21")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sqay4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0akv1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xo8dv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m2c8b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0l81h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c5km6")
+}],
+"loop": true,
+"name": &"Happy Sheep All",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sheep" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, 220)
+sprite_frames = SubResource("SpriteFrames_4j07a")
+animation = &"Happy Sheep All"
+script = ExtResource("2_88ej7")
