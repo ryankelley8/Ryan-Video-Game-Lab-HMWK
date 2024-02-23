@@ -7,9 +7,10 @@ extends Sprite2D
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	move()
+func move():
 	if Input.is_action_pressed("move_right"):
 		position.x += speed
 	if Input.is_action_pressed("move_left"):
@@ -18,6 +19,7 @@ func _process(delta):
 		position.y -= speed
 	if Input.is_action_pressed("move_down"):
 		position.y += speed
+
 	#if  Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		#position.x += 1.
 	
